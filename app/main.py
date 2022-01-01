@@ -15,9 +15,9 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI() 
 
-# origins = []
+origins = []
 # origins = ["https://www.google.com", "https://www.youtube.com"]
-origins = ["*"]
+# origins = ["*"]
 
 
 app.add_middleware(
@@ -37,4 +37,4 @@ app.include_router(vote.router)
 # request Get method url: "/"; order matters for functions having the same path
 @app.get("/")   #path operation (route) decorator, "/" means root path
 def root():
-    return {"message": "Hello World"}
+    return {"message": "Hello World!!!"}
