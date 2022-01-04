@@ -37,4 +37,4 @@ app.include_router(vote.router)
 # request Get method url: "/"; order matters for functions having the same path
 @app.get("/")   #path operation (route) decorator, "/" means root path
 def root():
-    return {"message": "Hello World"}
+    return {"message": "Hello World successfully deployed from CI/CD pipeline"}
